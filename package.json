@@ -1,21 +1,23 @@
 {
-  "name": "farmers-marketplace",
-  "version": "1.0.0",
+  "name": "toolsvils",
+  "version": "0.1.0",
   "private": true,
+  "homepage": "https://Rakshitsinghhh.github.io/toolsvils",
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.14.10",
+    "@craco/craco": "^7.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-    "styled-components": "^6.1.17"
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.1"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,10 +38,6 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "^7.1.0",
-    "@svgr/webpack": "^8.1.0",
-    "file-loader": "^6.2.0",
-    "react-scripts": "5.0.1",
-    "url-loader": "^4.1.1"
+    "gh-pages": "^6.3.0"
   }
 }
